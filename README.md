@@ -42,17 +42,17 @@ A modern AI-powered chatbot application built with React, TypeScript, NHost (Has
    ```powershell
    .\build.ps1
    ```
-  - Using npm native command:
-  ```bash
-  npm install
-  npm run build
-  ```
+   - Using npm native command:
+   ```bash
+   npm install
+   npm run build
+   ```
 ## Development
 
 Start the development server:
 - Using Docker command:
   ```powershell
-     .\start.ps1
+  .\start.ps1
   ```
 - Using native commands:
   ```bash
