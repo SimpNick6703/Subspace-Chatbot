@@ -2,6 +2,8 @@
 
 A modern AI-powered chatbot application built with React, TypeScript, NHost (Hasura), n8n and real-time capabilities.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc10a97f-2b52-4770-9cb7-5524c1798d69/deploy-status)](https://app.netlify.com/projects/simpnick6703-subspace-chatbot/deploys)
+
 ## Features
 
 - Email authentication with OAuth support (Discord)
