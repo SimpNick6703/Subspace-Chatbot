@@ -237,7 +237,18 @@ graph LR
 
 ## Deployment
 
-The application is configured for Netlify deployment with the included `netlify.toml`.
+The application frontend is configured for Netlify deployment with the included [netlify.toml](https://github.com/SimpNick6703/Subspace-Chatbot/blob/29ea4a338d5ac6194f65741f6aa6b1dd72f4d9cc/chatbot-app/netlify.toml).
+For backend n8n self host, pick your method:
+  - [npm](https://docs.n8n.io/hosting/installation/npm/)
+  - [docker](https://docs.n8n.io/hosting/installation/docker/)
+    - Configure a cloud VM and install docker. [[How-to](https://docs.docker.com/engine/install/)]
+    - Open your desired port to network from network manager of your service host.
+    - run command
+      ```bash
+      docker run -it --rm --name n8n -p {your_port}:5678 -e N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true -e N8N_RUNNERS_ENABLED=true -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+      ```
+    - open access your n8n dashboard at `http://{your.cloud.vm.ip}/{your_port}`
+    - Update your webhook URL in `sendMessage` Hasura Actions
 
 ## Reference Files
 
