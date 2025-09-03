@@ -238,6 +238,10 @@ graph LR
 ## Deployment
 
 The application frontend is configured for Netlify deployment with the included [netlify.toml](https://github.com/SimpNick6703/Subspace-Chatbot/blob/29ea4a338d5ac6194f65741f6aa6b1dd72f4d9cc/chatbot-app/netlify.toml).
+
+> [!NOTE]
+> I've shut down my self hosted n8n workflow so sent messages' will not be sent to AI provider and thus, no response will be shown. 
+
 For backend n8n self host, pick your method:
   - [npm](https://docs.n8n.io/hosting/installation/npm/)
   - [docker](https://docs.n8n.io/hosting/installation/docker/)
